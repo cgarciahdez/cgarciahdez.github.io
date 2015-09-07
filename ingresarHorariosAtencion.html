@@ -8,7 +8,6 @@
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery.js"></script>
     <script type="text/javascript" src="css/bootstrap.js"></script>
-
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js"></script>
     <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.3.js"></script>
@@ -72,34 +71,37 @@
                     color: black;
                 }
                 
-                .btn ,.btn-default{
+                .btn,
+                .btn-default {
                     color: #90DA11;
                     background-color: white;
                     border-color: #e3e3e3;
                 }
-                span{
-                 color:#90DA11;   
+                
+                span {
+                    color: #90DA11;
                 }
                 
-                i, strong{
-                    color:black;
+                i,
+                strong {
+                    color: black;
                 }
                 
-                .btn-default[disabled]{
+                .btn-default[disabled] {
                     background-color: #d1d4ca;
                     border-color: #e3e3e3;
-                    color:black;
-                }
-                .btn-default[disabled]>span{
-                 color:#a0b57b;   
+                    color: black;
                 }
                 
-                th.text-center, div.well th{
+                .btn-default[disabled]>span {
+                    color: #a0b57b;
+                }
+                
+                th.text-center,
+                div.well th {
                     background-color: #f2f2f2;
-                    color:black;
+                    color: black;
                 }
-                
-                
             </style>
             <div ng-controller="DatepickerDemoCtrl">
                 <!--<pre>Selected date is: <em >{{dt | date:'fullDate' }}</em></pre>!-->
@@ -107,9 +109,7 @@
                     <h1 style="color:#90DA11">Ingresar horarios de atención</h1>
                 </div>
                 <div class="row" style="text-align:justify;padding:20px">
-                    <p>Porfavor ingrese sus horarios haciendo click en el día correspondiente, seleccionando las horas que tendrá disponibles
-                    ese día, y haciendo click en el botón enviar. Si el horario es el mismo para todas las semanas del mes 
-                    y no desea hacer este proceso día por día, puede hacer click en el siguiente botón e ingresar su horario semanal:</p>
+                    <p>Porfavor ingrese sus horarios haciendo click en el día correspondiente, seleccionando las horas que tendrá disponibles ese día, y haciendo click en el botón enviar. Si el horario es el mismo para todas las semanas del mes y no desea hacer este proceso día por día, puede hacer click en el siguiente botón e ingresar su horario semanal:</p>
                 </div>
                 <div class="row" style="text-align:justify;padding-bottom:20px;padding-left:20px">
                     <a href="ingresarHorariosSemana.html" class="boton">Ingresar Horarios Semana</a>
@@ -232,7 +232,7 @@
                 </tr>
 
                 <tr>
-                    <a href="#">
+                    <a href="misCitas.html">
                         <input type="submit" value="Mis Citas" style="margin:10px;float:left;font-family:Tahoma,Geneva,sans-serif;width:96%" />
                     </a>
                 </tr>
