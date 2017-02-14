@@ -30,6 +30,8 @@
     <![endif]-->
 
 </head>
+    
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 <body id="page-top" class="index">
 
@@ -51,14 +53,22 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Skills</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#portfolio">Projects</a>
+                    </li>
+
+                    <li class="page-scroll">
+                        <a href="#about">Resume</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Things I like</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
                     </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -71,11 +81,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <a id="home"><img class="image_on img-responsive img-circle" src="https://pbs.twimg.com/profile_images/789176757987319808/hXcB0Kav.jpg" alt="profile">
-                    <img class="img-responsive img-circle image_off" src="https://avatars3.githubusercontent.com/u/10619844?v=3&s=460" alt="profile"></a>
+                    <a id="home" class="imagen" style="display:block">
+                        <img class="image_on img-responsive img-circle imagen" src="https://pbs.twimg.com/profile_images/789176757987319808/hXcB0Kav.jpg" alt="profile">
+                        <img class="img-responsive img-circle image_off imagen" src="https://avatars3.githubusercontent.com/u/10619844?v=3&s=460" alt="profile">
+                    </a>
+
+                    <script>
+                    
+                    </script>
                     
                     <div class="intro-text">
-                        <span class="name">Camila garcía</span>
+                        <span class="name cool">Camila garcía</span>
                         <hr class="star-light">
                         <span class="skills">Systems and Computing Engineering 
                             <br>
@@ -189,9 +205,56 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
+    <section id="things" class="success">
         <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="..." alt="...">
+                            <div class="carousel-caption">
+                                ...
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="..." alt="...">
+                            <div class="carousel-caption">
+                                ...
+                            </div>
+                        </div>
+                        ...
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container" style="width=100%">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Contact Me</h2>
@@ -199,54 +262,72 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
-                            </div>
-                        </div>
-                    </form>
+
+
+
+                <div class="col-md-2"></div>
+
+                <div class="col-md-2 text-center">
+                    <!--Contact Modal-->
+                    <a href="" class="contacto" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <!--<button type="button" class="btn btn-link" data-toggle="modal" data-target=".bs-example-modal-lg" style="margin:-6px">-->
+                            <span class="fa-stack fa-4x">
+  <i class="fa fa-square-o fa-stack-2x"></i>
+  <i class="fa fa-envelope fa-stack-1x" style="margin-bottom:4px"></i>
+</span>
+
+                        <!--</button>-->
+                    </a>
+
                 </div>
+                <div class="col-md-2 text-center">
+                    <!--Contact Modal-->
+                    <a href="#" class="contacto">
+                        <span class="fa-stack fa-4x">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x"></i>
+                            </span>
+                    </a>
+
+                </div>
+
+                <div class="col-md-2 text-center">
+                    <!--Contact Modal-->
+                    <a href="#" class="contacto">
+                        <span class="fa-stack fa-4x">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x"></i>
+                            </span>
+                    </a>
+
+                </div>
+
+                <div class="col-md-2 text-center">
+                    <!--Contact Modal-->
+                    <a href="#" class="contacto">
+                        <span class="fa-stack fa-4x grande">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x"></i>
+                            </span>
+                    </a>
+
+                </div>
+
+                <div class="col-md-2"></div>
+
+
             </div>
         </div>
     </section>
 
+
+
+
+
+
     <!-- Footer -->
     <footer class="text-center">
-        <div class="footer-above">
+        <!-- <div class="footer-above">
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
@@ -280,7 +361,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="footer-below">
             <div class="container">
                 <div class="row">
@@ -297,6 +378,69 @@
         <a class="btn btn-primary" href="#page-top">
             <i class="fa fa-chevron-up"></i>
         </a>
+    </div>
+
+    <!-- Contact me Modal -->
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <!-- Contact Section -->
+                <div>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2>Email Me</h2>
+                            <hr class="star-primary">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                            <form name="sentMessage" id="contactForm" novalidate>
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>Name</label>
+                                        <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>Email Address</label>
+                                        <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>Phone Number</label>
+                                        <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>Message</label>
+                                        <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div id="success"></div>
+                                <div class="row">
+                                    <div class="form-group col-xs-12">
+                                        <button type="submit" class="btn btn-success btn-lg">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Portfolio Modals -->
@@ -537,7 +681,7 @@
     <script src="js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
+    <script src="js/freelancer.js"></script>
 
 </body>
 
