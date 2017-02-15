@@ -4,6 +4,20 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+#surprise{
+    display:none;
+}
+
+img.proy{
+    height:200px;
+    width: 200px;
+    margin: auto;
+}
+
+h4.proy{
+    margin:auto;
+}
+
 .subt{
     font-size: 2.5em;
 }

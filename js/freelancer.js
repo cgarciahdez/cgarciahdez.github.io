@@ -11,7 +11,7 @@
         }, 1250, 'easeInOutExpo');
         event.preventDefault();
     });
-    
+
     $('a.page-scroll').bind('click', function (event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -76,28 +76,40 @@
     $(function () {
         $('.contacto i').hover(function () {
             $(this).animate({
-                color:"#2C3E50",
+                color: "#2C3E50",
                 width: "+=20px"
             });
         }, function () {
             $(this).animate({
-                color:"#18BC9C",
+                color: "#18BC9C",
                 width: "-=20px"
             });
         });
     });
-    
+
     $(function () {
         $('.image_on').hover(function () {
             $('.image_on').animate({
-                display:"none"
-            });
+                display: "none"
+            }, "slow");
         });
     });
-    
-    
-        
-    
+
+    $(function () {
+        var video = $('#vid');
+        $('#bsurprise').click(function () {
+            if ($('#surprise').css("display") === "none") {
+                $('#surprise').css("display", "block");
+                $('#vid').get(0).play();
+                $('#vid').get(0).loop = true;
+            } else {
+                $('#surprise').css("display","none");
+                $('#vid').get(0).pause();
+                $('#vid').get(0).loop=false;
+            }
+        });
+    });
+
 
 
 })(jQuery); // End of use strict
