@@ -4,6 +4,20 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+.carousel-control.right, .carousel-control.left{
+    background-image: none;   
+}
+
+.skils{
+    font-size: 2em;
+    float: right;
+}
+
+.img_c{
+    margin: auto;
+    max-height:600px !important;
+    
+}
 
 #home{
     margin: 0 auto;
@@ -24,7 +38,7 @@
 }
 
 .contacto i{
-    color:#b16884;  
+    color:#642848;  
 }
 
 
@@ -335,7 +349,7 @@ footer .footer-col {
 }
 footer .footer-below {
   padding: 25px 0;
-  background-color: #233140;
+  background-color: #642848;
 }
 .btn-outline {
   color: white;
