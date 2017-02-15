@@ -88,12 +88,9 @@
     });
     
     $(function () {
-        $('#image_on').click(function () {
-            $('#image_on').animate({
+        $('.image_on').hover(function () {
+            $('.image_on').animate({
                 display:"none"
-            });
-            $('#image_off').animate({
-                display:"block"
             });
         });
     });
